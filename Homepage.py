@@ -86,7 +86,7 @@ with st.container():
         st.write("##")
         image_column, text_column = st.columns((1,2))
         with image_column:
-            st.image(img_aeroplane)
+#            st.image(img_aeroplane)
             with text_column:
                 st.subheader("Predicting Changi Airport passenger numbers post COVID-19")
                 st.write("""We set out to understand post-pandemic travel data.""")
@@ -101,7 +101,7 @@ with st.container():
         st.write("##")
         image_column, text_column = st.columns((1,2))
         with image_column:
-            st.image(img_monkeypox)
+#            st.image(img_monkeypox)
             with text_column:
                 st.subheader("Interactive dashboard tracking global monekypox cases")
                 st.write("""We are tracking the latest "public health emergency of international concern" """)
@@ -111,7 +111,7 @@ with st.container():
         st.write("-----")
         image_column, text_column = st.columns((1,2))
         with image_column:
-            st.image(img_pet)
+#            st.image(img_pet)
             with text_column:
                 st.subheader("Correlation study on stolen animals in London")
                 st.write(""" Notable Skills: Correlation, Regression, Crime, Urban Data""")
