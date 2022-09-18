@@ -88,7 +88,7 @@ with st.container():
         st.write("")
         st.header("Current Projects")
 # Project 0 - Correlation heatmaps      
-        with st.container():
+    with st.container():
         st.write("-----")
         st.write("")
         st.header("Correlation Heat Maps")
