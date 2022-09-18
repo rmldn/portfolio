@@ -88,10 +88,11 @@ with st.container():
         st.write("")
         st.header("Current Projects")
         
-# Project 0 - Correlation heatmaps      
+# Project 0 - Correlation Heatmaps      
     with st.container():
         image_column, text_column = st.columns((1,2))
         with image_column:
+            st.button.radio('Correlation Heatmaps')
             
             with text_column:
 #               st.write("-----")
