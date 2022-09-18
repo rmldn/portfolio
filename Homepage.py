@@ -8,7 +8,7 @@ with open("style.css") as f:
 with st.container():
     st.subheader("")
     st.subheader("Rory Marrast, MSc, MRSC")
-    image = Image.open('/app/portfolio/rm.jpg')
+    image = Image.open('rm.jpg')
     st.image(image,width=250)
     st.write("Data Analysis, Data Visualisation, Data Cleansing")
 #    st.write("Using Python to solve your business challenges and generate digestable visualisations")
