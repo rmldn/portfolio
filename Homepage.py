@@ -79,6 +79,19 @@ with st.container():
         - Happy to discuss any data-based projects.
         ''')
 #----- Projects
+
+#### Current Projects
+
+
+    with st.container():
+        st.write("-----")
+        st.write("")
+        st.header("Current Projects")
+# Project 0 - Correlation heatmaps      
+        with st.container():
+        st.write("-----")
+        st.write("")
+        st.header("Correlation Heat Maps")
     #Project 1 - Predicting International travellers from Changi Airport
     with st.container():
         st.write("-----")
