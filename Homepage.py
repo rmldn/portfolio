@@ -9,7 +9,7 @@ from PIL import Image
 import seaborn as sns
 st.set_page_config(page_title="Rory's Webpage", page_icon=":tada:", layout="wide")
 
-df1 = pd.read_csv("/Users/rory/Documents/Coding/Jupiter Notebook/Untitled Folder/movies.csv")
+df1 = pd.read_csv("https://raw.githubusercontent.com/rmldn/portfolio/main/movies.csv")
 df = df1
 df.head() # quick glimpse of data
 
