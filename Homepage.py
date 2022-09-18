@@ -83,7 +83,7 @@ with st.container():
     with st.container():
         st.write("-----")
         st.write("")
-        st.header("My Projects")
+        st.header("Upcoming Projects")
         st.write("##")
         image_column, text_column = st.columns((1,2))
         with image_column:
