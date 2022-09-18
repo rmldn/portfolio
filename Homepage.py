@@ -89,9 +89,9 @@ with st.container():
         st.header("Current Projects")
 # Project 0 - Correlation heatmaps      
     with st.container():
-        st.write("-----")
+#       st.write("-----")
         st.write("")
-        st.header("Correlation Heat Maps")
+        st.subheader("Correlation Heat Maps")
     #Project 1 - Predicting International travellers from Changi Airport
     with st.container():
         st.write("-----")
