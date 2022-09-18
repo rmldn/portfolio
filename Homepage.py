@@ -8,8 +8,9 @@ with open("style.css") as f:
 with st.container():
     st.subheader("")
     st.subheader("Rory Marrast, MSc, MRSC")
-#    image = Image.open('https://github.com/rmldn/portfolio/blob/main/rm.JPG')
-#    st.image(image,width=250)
+    htp1 = 'https://raw.githubusercontent.com/rmldn/portfolio/blob/main/rm.JPG'
+    image = Image.open(htp1)
+    st.image(image,width=250)
     st.write("Data Analysis, Data Visualisation, Data Cleansing")
 #    st.write("Using Python to solve your business challenges and generate digestable visualisations")
 
