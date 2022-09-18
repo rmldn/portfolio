@@ -94,10 +94,10 @@ with st.container():
         with image_column:
             
             with text_column:
-#           st.write("-----")
-            st.write("")
-            st.subheader("Correlation Heat Maps")
-            st.write("""Using data visualisations to reveal correlation strenth of variables in a large dataset""")
+#               st.write("-----")
+                st.write("")
+                st.subheader("Correlation Heat Maps")
+                st.write("""Using data visualisations to reveal correlation strenth of variables in a large dataset""")
     #Project 1 - Predicting International travellers from Changi Airport
     with st.container():
 
