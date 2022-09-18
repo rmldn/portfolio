@@ -27,8 +27,8 @@ for col in df_num.columns:
         df_num[col] = df_num[col].cat.codes
 
 
-with open("style.css") as f:
-    st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
+#with open("style.css") as f:
+#    st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
 #----- Header Section
 with st.container():
     st.subheader("")
