@@ -51,9 +51,9 @@ st.markdown("""
 
 
 #------ Load assets
-img_aeroplane = Image.open("/Users/rory/PycharmProjects/website/Images/aeroplane.jpg")
-img_monkeypox = Image.open("/Users/rory/PycharmProjects/website/Images/monkeypox.jpg")
-img_pet = Image.open("/Users/rory/PycharmProjects/website/Images/pet.png")
+#img_aeroplane = Image.open("/Users/rory/PycharmProjects/website/Images/aeroplane.jpg")
+#img_monkeypox = Image.open("/Users/rory/PycharmProjects/website/Images/monkeypox.jpg")
+#img_pet = Image.open("/Users/rory/PycharmProjects/website/Images/pet.png")
 # img_3 = Image.open("/Users/rory/PycharmProjects/website/Images/3.jpg")
 # img_4 = Image.open("/Users/rory/PycharmProjects/website/Images/4.jpg")
 
