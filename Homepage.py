@@ -1,6 +1,31 @@
 import streamlit as st
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+import matplotlib
+from matplotlib import pyplot as plt
+matplotlib.rcParams['figure.figsize'] = [30,10]
 from PIL import Image
+import seaborn as sns
 st.set_page_config(page_title="Rory's Webpage", page_icon=":tada:", layout="wide")
+
+df1 = pd.read_csv("/Users/rory/Documents/Coding/Jupiter Notebook/Untitled Folder/movies.csv")
+df = df1
+df.head() # quick glimpse of data
+
+df = df.fillna(0)
+
+df['gross'] = df['gross'].astype('int64')
+df['budget'] = df['budget'].astype('int64')
+df.sort_values(by=['gross'], inplace=False, ascending=False)
+
+
+df_num = df
+for col in df_num.columns:
+    if(df_num[col].dtype =='object'):
+        df_num[col] = df_num[col].astype('category')
+        df_num[col] = df_num[col].cat.codes
+
 
 with open("style.css") as f:
     st.markdown('<style>{}</style>'.format(f.read()), unsafe_allow_html=True)
@@ -90,14 +115,23 @@ with st.container():
         
 # Project 0 - Correlation Heatmaps      
     with st.container():
-        image_column, text_column = st.columns((1,2))
-        with image_column:
-            
-            with text_column:
-#               st.write("-----")
-                st.write("")
-                st.subheader("Correlation Heat Maps")
-                st.write("""Using data visualisations to reveal correlation strenth of variables in a large dataset""")
+
+#       st.write("-----")
+        st.write("")
+        st.subheader("Correlation Heat Maps")
+        st.write("""Using data visualisations to reveal correlation strenth of variables in a large dataset""")
+        
+        st.dataframe(df1)
+        fig = plt.figure()
+    # st.write("-----")
+    # st.subheader("The Heat Map")
+        corr_mat = df_num.corr(method='pearson')
+        sns.heatmap(corr_mat, annot=True)
+        plt.title("Film Release Correlations - Heat Map")
+        plt.xlabel("Film Release Metadata")
+        plt.ylabel("Film Release Metadata")
+        st.pyplot(fig)
+
     #Project 1 - Predicting International travellers from Changi Airport
     with st.container():
 
