@@ -10,7 +10,7 @@ with st.container():
     st.subheader("Rory Marrast, MSc, MRSC")
     htp1 = 'https://raw.githubusercontent.com/rmldn/portfolio/blob/main/rm.JPG'
     image = Image.open(htp1)
-    st.image(image,width=250)
+    st.image(htp1,width=250)
     st.write("Data Analysis, Data Visualisation, Data Cleansing")
 #    st.write("Using Python to solve your business challenges and generate digestable visualisations")
 
