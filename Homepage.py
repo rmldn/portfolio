@@ -87,11 +87,13 @@ with st.container():
         st.write("-----")
         st.write("")
         st.header("Current Projects")
+        
 # Project 0 - Correlation heatmaps      
     with st.container():
 #       st.write("-----")
         st.write("")
         st.subheader("Correlation Heat Maps")
+        st.write("""Using data visualisations to reveal correlation strenth of variables in a large dataset""")
     #Project 1 - Predicting International travellers from Changi Airport
     with st.container():
         st.write("-----")
